@@ -8,8 +8,29 @@ public class No {
         this.anterior = null;
         this.processos = processos;
     }
-    private No cabeça;
-    private No cauda;
-    private int tamanho;
+
+    public No getProximo() {
+        return proximo;
+    }
+
+    public void setProximo(No proximo) {
+        this.proximo = proximo;
+    }
+
+    public No getAnterior() {
+        return anterior;
+    }
+
+    public void setAnterior(No anterior) {
+        this.anterior = anterior;
+    }
+
+    public String getProcessos() {
+        return processos;
+    }
+
+    public void setProcessos(String processos) {
+        this.processos = processos;
+    }
 
 }
