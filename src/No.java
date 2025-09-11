@@ -1,9 +1,9 @@
 public class No {
   private No proximo;
   private No anterior;
-  private String processos;
+  private Processo processos;
 
-    public No(No proximo, No anterior, String processos) {
+    public No(Processo processos) {
         this.proximo = null;
         this.anterior = null;
         this.processos = processos;
@@ -25,12 +25,11 @@ public class No {
         this.anterior = anterior;
     }
 
-    public String getProcessos() {
+    public Processo getProcessos() {
         return processos;
     }
 
-    public void setProcessos(String processos) {
+    public void setProcessos(Processo processos) {
         this.processos = processos;
     }
-
 }

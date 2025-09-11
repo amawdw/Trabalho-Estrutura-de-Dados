@@ -4,7 +4,7 @@ public class ListaEncadeadaDuplaCiclica {
     private int tamanho;
 
     public void addFinalLista(String processo){
-        No novoNO = new No(processo);
+        No novoNO = new No(Processo);
         if(cabeca==null){
             cabeca = novoNO;
             cauda = novoNO;
