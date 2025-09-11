@@ -12,7 +12,7 @@ public class ListaEncadeadaDuplaCiclica {
             cabeca.getAnterior() = cabeca;
 
         }else{
-            novoNO.getAnterior() = cauda;
+            novoNO.getAnterior()nterior() = cauda;
             novoNO.getProximo() = cabeca;
             cauda.getProximo() = novoNO;
             cabeca.getAnterior() = novoNO;
