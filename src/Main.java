@@ -12,10 +12,10 @@ public class Main {
                 int id = Integer.parseInt(t[0].trim());
                 String nome = t[1].trim();
                 int prioridade = Integer.parseInt(t[2].trim());
-                int ciclos = Integer.parseInt(t[3].trim());
+                int ciclosnescessarios = Integer.parseInt(t[3].trim());
                 String recurso = (t.length > 4 && !t[4].trim().isEmpty()) ? t[4].trim() : null;
 
-                Processo p = new Processo(id, nome, prioridade, ciclos, recurso);
+                Processo p = new Processo(id, nome, prioridade, recurso, ciclosnescessarios);
                 s.adicionarProcesso(p);
             }
         } catch (IOException e) {
